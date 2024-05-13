@@ -31,12 +31,15 @@
       size: 200px;
     }
     .header {
-      display: auto;
-      width: 40%;
+      width: 100%;
       max-height: 100%;
+      height: 594px;
       position: relative;
       background-image: url(https://grizzly.s.cz/img/Bear_Skull.jpg);
-      background-position: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 600px;
     }
     .container {
       display: flex;
@@ -69,6 +72,7 @@
       drop-shadow(-1px -1px 0 #747166);
       filter: drop-shadow(-1px -1px 0 #747166)
       drop-shadow(-1px -1px 0 #747166);
+      width: 600px;
     }
     fieldset {
       color: rgb(180, 128, 65);
@@ -114,7 +118,6 @@
       src="https://grizzly.s.cz/img/Header.png"
       class="img outlined-image-text"
       alt="Grizzly's lair"
-      position="fixed"
       />
     </div>
   </div>
@@ -135,6 +138,9 @@
       <li class="menu-item">
         <a href="contact">Contact</a>
       </li>
+      <li class="menu-item">
+        <a href="other">Other fun shit</a>
+      </li>
     </ul>
   </div>
   <div style="text-align: center">
@@ -150,7 +156,7 @@
 <div>
   <form  method="get" action="#">
     <fieldset>
-      <legend>Would you please rate this page?</legend>
+      <legend>Oi! Rate me!</legend>
       <label for="toptier">Top tier shit!</label>
       <input type="radio" id="top" name="top" value="toptier" >
       <label for="love">I love it!</label>
