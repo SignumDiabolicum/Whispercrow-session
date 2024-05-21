@@ -74,17 +74,20 @@
   }
   .image-wrapper{
     background-image: #151311;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 2;
+    transition: all 500ms ease-in-out;
   }
   .outlined-image-text {
     -webkit-filter: drop-shadow(1px 1px 0 #747166);
     filter: drop-shadow(-1px -1px 0 #747166)
     drop-shadow(-1px -1px 0 #747166);
-    width: 500px;
+    max-height: 170px;
     display: block;
+    transition: all 500ms ease-in-out;
   }
 
   fieldset {
@@ -132,7 +135,17 @@
     max-width: 50%;
     height: auto;
   }
-  
+  .scroll {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+  }
+
+.scroll img {
+max-height: 100px;
+margin: -20px 0;
+}
+
   @media (max-width:768px) {
     .outlined-image-text {
       width: 100%;
